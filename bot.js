@@ -1,6 +1,8 @@
 console.log("beep beeo!");
 require("dotenv").config();
 
+const keepAlive = require("./server.js")
+
 const replyArray = [
   "Small progress is still progress",
   "Struggling means you're learning",
@@ -20,7 +22,7 @@ const client = new Client({
   ],
 });
 
-client.login(process.env.TOKEN);
+
 
 client.on("ready", readyDiscord);
 
@@ -37,3 +39,6 @@ client.on("messageCreate", (message) => {
     // console.log(items);
   }
 });
+
+keepAlive()
+client.login(process.env.TOKEN);
