@@ -1,14 +1,15 @@
 {
-  "name": "mental-health-bot",
+  "name": "burrabot",
   "version": "1.0.0",
-  "description": "Discord bot to help with users' mental health and keep them inspired",
-  "main": "index.js",
+  "description": "",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "SukritSethi",
+  "author": "Sukrit Sethi",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
   }
 }
